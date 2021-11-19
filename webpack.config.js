@@ -221,6 +221,13 @@ function createConfig({ folder }) {
     module: {
       rules: [
         {
+          test: /\.(png|jpe?g|gif)$/i,
+          loader: "file-loader",
+          options: {
+            name: "[path][name].[ext]",
+          },
+        },
+        {
           test: /\.jsx?$/,
           use: ["babel-loader"],
           exclude: /node_modules/,
