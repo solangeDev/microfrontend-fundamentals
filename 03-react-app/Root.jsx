@@ -1,3 +1,3 @@
 export default function Root(props) {
-  return <div>{props.name} is mounted!</div>;
+  return <div>{props.pepe} is mounted!</div>;
 }
