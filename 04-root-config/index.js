@@ -16,6 +16,10 @@ if (!window.angularApp) {
   throw Error("Please run 04-angular-app in a separate terminal tab");
 }
 
+if (!window.vueAppExcercise) {
+  throw Error("Please run 04-vue-exercise in a separate terminal tab");
+}
+
 registerApplication({
   name: "react-navbar",
   app: window.reactNavbar,
@@ -38,6 +42,12 @@ registerApplication({
   name: "angular-app",
   app: window.angularApp,
   activeWhen: ["/angular"],
+});
+
+registerApplication({
+  name: "vue-exercise",
+  app: window.vueAppExcercise,
+  activeWhen: ["/vue-exercise"],
 });
 
 start();

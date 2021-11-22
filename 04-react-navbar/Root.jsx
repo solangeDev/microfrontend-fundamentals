@@ -20,6 +20,9 @@ export default function Root(props) {
       <Link to="/angular" style={linkStyle}>
         Angular
       </Link>
+      <Link to="/vue-exercise" style={linkStyle}>
+        Vue Excercise
+      </Link>
     </BrowserRouter>
   );
 }
