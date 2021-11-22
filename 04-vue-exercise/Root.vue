@@ -11,7 +11,12 @@
     <router-link to="/angular" style="padding: 16px; display: inline-block"
       >Angular</router-link
     >
-    <div>Vue exercise</div>
+    <div class="Texto">Vue exercise</div>
     <router-view></router-view>
   </div>
 </template>
+<style scope>
+.Texto {
+  color: green;
+}
+</style>
